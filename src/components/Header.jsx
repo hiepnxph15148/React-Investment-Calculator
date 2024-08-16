@@ -3,9 +3,9 @@ import imageHeader from '../assets/investment-calculator-logo.png'
 
 const Header = () => {
   return (
-    <header>
-        <img src={imageHeader} alt="" />
-        <h2></h2>
+    <header id='header'>
+      <img src={imageHeader} alt="Logo showing a money bag" />
+      <h1>Investment Calculator</h1>
     </header>
   )
 }
