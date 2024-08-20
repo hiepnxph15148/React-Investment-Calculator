@@ -28,7 +28,7 @@ function App() {
     <>
       <Header />
       <UserInput userInput={userInput} onChange={handleChange} />
-      {!isInputValue && <p className="centerd">Please enter valid values for duration and investment duration.</p>}
+      {!isInputValue && <p className="center">Please enter valid values for duration and investment duration.</p>}
       {isInputValue && <Results input={userInput} />}
     </>
   )
