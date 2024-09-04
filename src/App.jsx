@@ -13,7 +13,7 @@ function App() {
   })
 
   // Khởi tạo ban đầu bắt buộc phải lớn hơn 0
-  const isInputValue = userInput.duration >= 1;
+  // const isInputValue = userInput.duration >= 1;
 
   // Xử lý sự kiện thay đ��i giá trị input
   function handleChange(inputIdentifier, newValue) {
@@ -28,8 +28,10 @@ function App() {
     <>
       <Header />
       <UserInput userInput={userInput} onChange={handleChange} />
-      {!isInputValue && <p className="center">Please enter valid values for duration and investment duration.</p>}
-      {isInputValue && <Results input={userInput} />}
+      {/* {!isInputValue && <p className="center">Please enter valid values for duration and investment duration.</p>} */}
+      {/* {isInputValue && <Results input={userInput} />} */}
+      {<Results input={userInput} />}
+
     </>
   )
 }

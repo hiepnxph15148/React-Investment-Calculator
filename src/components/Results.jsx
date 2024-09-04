@@ -5,7 +5,7 @@ const Results = ({ input }) => {
   const resultsData = calculateInvestmentResults(input)
 
   // Tính giá trị ban đầu
-  const initialInvestment =
+    const initialInvestment =
     resultsData[0].valueEndOfYear -
     resultsData[0].interest -
     resultsData[0].annualInvestment;
